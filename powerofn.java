@@ -24,6 +24,7 @@ public class powerofn {
         int ans = powof(x, n);
 
         System.out.println(ans);
+        System.out.println("thank you");
 
 
 
