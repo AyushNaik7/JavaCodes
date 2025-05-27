@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class powerofn {
     
-    public static int powof(int n , int  x){
+    public static int powof(int x, int  n){
         if ( x ==0){
             return 0;
         }
@@ -11,17 +11,17 @@ public class powerofn {
             return 1;
         }
 
-       int powofnm1= powof(n-1, x);
-       int powofn = n * powofnm1;
+       int powofnm1= powof(x, n-1);
+       int powofn = x * powofnm1;
        return powofn;
 
     }
     public static void main(String[] args) {
 
-        int n=4;
-        int x=2;
+        int x=4;
+        int n=2;
 
-        int ans = powof(n, x);
+        int ans = powof(x, n);
 
         System.out.println(ans);
 
